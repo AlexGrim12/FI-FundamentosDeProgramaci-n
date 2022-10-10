@@ -8,6 +8,6 @@ int main()
     printf("Ingrese la anchura de la habitacion: ");
     scanf("%f", &anchura);
     superficie = longitud * anchura;
-    printf("La superficie de la habitacion es: %f", superficie);
+    printf("La superficie de la habitacion es: %.4f m^2", superficie);
     return 0;
 }
