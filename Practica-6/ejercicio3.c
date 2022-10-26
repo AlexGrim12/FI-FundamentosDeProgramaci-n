@@ -3,11 +3,11 @@
 int main()
 {
     float longitud, anchura, superficie;
-    printf("Ingrese la longitud de la habitacion: ");
+    printf("Ingrese la longitud de la habitaci%cn: ", 162);
     scanf("%f", &longitud);
-    printf("Ingrese la anchura de la habitacion: ");
+    printf("Ingrese la anchura de la habitaci%cn: ", 162);
     scanf("%f", &anchura);
     superficie = longitud * anchura;
-    printf("La superficie de la habitacion es: %.4f m^2", superficie);
+    printf("La superficie de la habitaci%cn es: %.4f unidades", 162, superficie);
     return 0;
 }
