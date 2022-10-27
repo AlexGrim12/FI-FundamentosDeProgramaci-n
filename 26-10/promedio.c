@@ -13,7 +13,7 @@ int main()
         i++;
     } while (i <= c);
     prom = prom / c;
-    printf("El promedio es: %f", prom);
+    printf("El promedio es: %.2f", prom);
 
     return 0;
 }
