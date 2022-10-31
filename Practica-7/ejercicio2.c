@@ -52,8 +52,6 @@ int main()
     // impreciones
     printf("\nEl pago por el tiempo es: %.2f", PAG);
 
-    printf("\nEl pago es: %.2f", PAG);
-
     printf("\nEl impuesto es: %.2f", IMP);
 
     printf("\nEl total es: %.2f", TOT);
