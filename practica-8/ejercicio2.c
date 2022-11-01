@@ -1,8 +1,10 @@
 #include <stdio.h>
+
 int main()
 {
     float res = 0, a = 2, b = 1, c = 1, sum = 0;
     int i;
+
     for (i = 0; i < 25; i++)
     {
         res = ((a / b) * c);
