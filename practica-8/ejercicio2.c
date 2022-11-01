@@ -11,9 +11,6 @@ int main()
         c = c * 2;
         sum = sum + res;
     }
-    printf("La suma es igual a: %.2f\n", sum);
-    printf("a: %.0f\n", a);
-    printf("b: %.0f\n", b);
-    printf("c: %.0f\n", c);
+    printf("La suma de la ecuaci%cn hasta z(25) es igual a: %.2f\n", 162, sum);
     return 0;
 }
