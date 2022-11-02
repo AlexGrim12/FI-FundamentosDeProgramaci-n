@@ -68,6 +68,24 @@ int programa3()
     return 0;
 }
 
+int programa4()
+{
+    int i;
+  float x;
+  double tot,fac=1;
+  
+  printf("Ingrese un número:\n");
+  scanf("%f",&x);
+
+  for (i=1;i<=100;i++)
+    {
+      fac=fac*i;
+      tot=tot+(pow(x,i)/(fac));
+    }
+
+printf("La suma de cada uno de los valores de 1 a 100 es: %.10f\n",tot+1);
+}
+
 int opciones()
 {
     printf("\n\n%cQu%c desea realizar? 1. Repetir este programa 2. Ir al men%c 3. Salir -> ", 168, 130, 163);
