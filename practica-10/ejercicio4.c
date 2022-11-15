@@ -4,9 +4,9 @@ int main()
 {
     int i, j, n, m, n1, m1;
 
-    printf("Introduzca el número de filas: ");
+    printf("Introduzca el n%cmero de filas: ", 163);
     scanf("%i", &n);
-    printf("Introduzca el número de columnas: ");
+    printf("Introduzca el n%cmero de columnas: ", 163);
     scanf("%i", &m);
     printf("Introduzca los elementos de la matriz:\n");
 
@@ -26,22 +26,20 @@ int main()
     printf("Matriz original:");
     for (i = 0; i < n; ++i)
     {
+        printf("\n\t\t");
         for (j = 0; j < m; ++j)
         {
             printf("%s ", matriz[i][j]);
-            if (j == m - 1)
-                printf("");
         }
     }
     // Imprimir la matriz transpuesta
-    printf("Matriz transpuesta:");
+    printf("\n\nMatriz transpuesta:");
     for (i = 0; i < m; ++i)
     {
+        printf("\n\t\t");
         for (j = 0; j < n; ++j)
         {
             printf("%s ", matriz[j][i]);
-            if (j == n - 1)
-                printf("");
         }
     }
     return 0;
