@@ -1,0 +1,8 @@
+nombre = str(input("Ingrese su nombre: "))
+edad = int(input("Ingrese su edad: "))
+numero_cuenta = int(input("Ingrese su número de cuenta: "))
+carrera = str(input("Ingrese su carrera: "))
+print("\nNombre: ", nombre)
+print("Edad: ", edad)
+print("Número de cuenta: ", numero_cuenta)
+print("Carrera: ", carrera)
