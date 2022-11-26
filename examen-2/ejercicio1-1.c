@@ -1,60 +1,49 @@
-#include <stdio.h>
-
 int main()
 {
+    int i = 0, j = 0;
 
-    int r, c; // r de renglon,  c de columna .
-
-    for (r = 0; r < 8; r++)
+    for (i = 0; i < 8; i++)
     {
-        for (c = 0; c < 8; c++)
+        for (j = 0; j < 8; j++)
         {
-            // PARA LOS PEONES
-            if (r == 1 || r == 6)
+            if (i == 1 || i == 6)
             {
                 printf("P\t");
             }
-
-            // PARA LAS TORRES
-            else if ((r == 0 && c == 0) ||
-                     (r == 7 && c == 0) ||
-                     (r == 0 && c == 7) ||
-                     (r == 7 && c == 7))
+            else if ((i == 0 && j == 0) ||
+                     (i == 7 && j == 0) ||
+                     (i == 0 && j == 7) ||
+                     (i == 7 && j == 7))
             {
                 printf("T\t");
             }
-            // PARA LOS CABALLOS
-            else if ((r == 0 && c == 1) ||
-                     (r == 7 && c == 1) ||
-                     (r == 0 && c == 6) ||
-                     (r == 7 && c == 6))
+            else if ((i == 0 && j == 1) ||
+                     (i == 7 && j == 1) ||
+                     (i == 0 && j == 6) ||
+                     (i == 7 && j == 6))
             {
                 printf("C\t");
             }
-            // PARA LOS ALFILES
-            else if ((r == 0 && c == 2) ||
-                     (r == 7 && c == 2) ||
-                     (r == 0 && c == 5) ||
-                     (r == 7 && c == 5))
+            else if ((i == 0 && j == 2) ||
+                     (i == 7 && j == 2) ||
+                     (i == 0 && j == 5) ||
+                     (i == 7 && j == 5))
             {
                 printf("A\t");
             }
-            // PARA LA REINA
-            else if ((r == 0 && c == 3) ||
-                     (r == 7 && c == 3))
+            else if ((i == 0 && j == 4) ||
+                     (i == 7 && j == 4))
             {
-                printf("M\t");
+                printf("K\t");
             }
-            // PARA EL REY
-            else if ((r == 0 && c == 4) ||
-                     (r == 7 && c == 4))
+            else if ((i == 0 && j == 3) ||
+                     (i == 7 && j == 3))
             {
-                printf("R\t");
+                printf("Q\t");
             }
-
             else
             {
-                printf("-\t");
+                printf(".\t");
             }
         }
         printf("\n");
