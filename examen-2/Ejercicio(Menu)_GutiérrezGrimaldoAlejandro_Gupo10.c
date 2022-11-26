@@ -1,4 +1,8 @@
-int main()
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int programa1()
 {
     char tablero[8][8], peon = 'P', torre = 'T', caballo = 'C', alfil = 'A', rey = 'K', reyna = 'Q';
     int i = 0, j = 0;
@@ -57,5 +61,75 @@ int main()
         }
         printf("\n");
     }
+    return 0;
+}
+
+int programa2()
+{
+    char caracteres[50];
+    int i = 0;
+    printf("Inserte los caracteres que desee ivertir -> ");
+    scanf("%s", caracteres);
+    printf("Los caracteres invertidos son -> ");
+    for (i = strlen(caracteres); i >= 0; i--)
+    {
+        printf("%c", caracteres[i]);
+    }
+    return 0;
+}
+
+int opciones()
+{
+    printf("\n\n%cQu%c desea realizar? 1. Repetir este programa 2. Ir al men%c 3. Salir -> ", 168, 130, 163);
+    return 0;
+}
+
+int main()
+{
+menu:
+    int op_g, r;
+    printf("El menu es el siguiente: \n\n");
+    printf("1. Ejercicio 1\n2. Ejercicio 2\n3. Salir\n");
+    printf("\n%cQu%c programa desea ejecutar? -> ", 168, 130);
+    scanf("%i", &op_g);
+    switch (op_g)
+
+    {
+    case 1:
+    rprograma1:
+        programa1();
+        opciones();
+        scanf("%i", &r);
+        if (r == 1)
+        {
+            goto rprograma1;
+        }
+        else if (r == 2)
+        {
+            goto menu;
+        }
+        break;
+    case 2:
+    rprograma2:
+        programa2();
+        opciones();
+        scanf("%i", &r);
+        if (r == 1)
+        {
+            goto rprograma2;
+        }
+        else if (r == 2)
+        {
+            goto menu;
+        }
+        break;
+    case 3:
+        printf("\nSaliendo...");
+        break;
+    default:
+        printf("Opci%cn no v%clida", 162, 160);
+        break;
+    }
+    printf("\n\nGracias por usar el programa :)");
     return 0;
 }
