@@ -1,6 +1,8 @@
 // Realizar un programa que permita obtener la transpuesta de una matriz. Se deberán crear las siguientes funciones Guarda_datos, Muestra_datos, acomoda_datos.
+
 #include <stdio.h>
 #include <string.h>
+
 float Guarda_datos(float matriz[100][100], int fil, int col)
 {
     int i = 0, j = 0;
@@ -14,6 +16,7 @@ float Guarda_datos(float matriz[100][100], int fil, int col)
         }
     }
 }
+
 void Muestra_datos(float matriz[100][100], int fil, int col)
 {
     int i = 0, j = 0;
@@ -21,11 +24,11 @@ void Muestra_datos(float matriz[100][100], int fil, int col)
     {
         for (j = 0; j < col; j++)
         {
-            printf("%.1f\n", matriz[i][j]);
+            printf("%f", matriz[i][j]);
         }
-        printf("\n");
     }
 }
+
 float acomoda_datos(float matriz[100][100], float matriz2[100][100], int fil, int col)
 {
     int i = 0, j = 0;
@@ -37,6 +40,7 @@ float acomoda_datos(float matriz[100][100], float matriz2[100][100], int fil, in
         }
     }
 }
+
 int main()
 {
     int fil, col;
@@ -44,9 +48,8 @@ int main()
     scanf("%i", &fil);
     printf("Inserte la cantidad de columnas para la matriz -> ");
     scanf("%i", &col);
-    float matriz[fil][col], matriz2[fil][col];
+    float matriz[100][100], matriz2[100][100];
     Guarda_datos(matriz, fil, col);
-    Muestra_datos(matriz, fil, col);
     acomoda_datos(matriz, matriz2, fil, col);
     Muestra_datos(matriz2, fil, col);
 }
