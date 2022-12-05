@@ -1,3 +1,45 @@
-Algebra             calculo
-     
-Algebra lineal
+Algebra             Calculo y geometria     Quimica                 Fundamentos de              Fundamentos de          Igualdad de genero
+                    Analitica                                       Fisica                      Programacion            en Ingenieria
+
+
+
+Algebra lineal      Calculo integral        Mecanica                Redaccion y                 Estructura de datos 
+                                                                    Exposicion de Temas         y algoritmos I
+                                                                    de Ingenieria 
+
+
+
+Probabilidad        Calculo vectorial       Ecuaciones              Cultura y                    Estrucutura de datos    Programacion
+                                            Diferenciales           Comunicacion                 y algoritmos II         Orientada a objetos   
+
+
+Fundamentos de      Electricidad y          Analisis                Matematicas                  Estructuras                   
+Estadistica         Magnetismo              Numerico                Avanzadas                    Discretas
+
+
+Estructura y        Dispositivos            Lenguajes Formales y    Senales y                    Ingenieria
+Programacion de     Electronicos            Automatas               sistemas                     de Software
+Computadoras
+
+
+Sistemas            Diseno Digital          Bases de Datos          Circuitos Electricos         Administracion de    
+Operativos          Moderno                                                                      proyectos de Software 
+
+
+Finanzas en la      Diseno                  Inteligencia            Compiladores                 Sistema de                Introduccion a la     
+Ingenieria en       Digital VLSI            Artificial                                           Comunicaciones            Economia
+Computacion
+
+
+Optativa(s) de      Microcomputadoras       Computacion grafica     Etica Profesional             Redes de Datos
+Ciencias sociales                           e Iteraccion Humano-                                  Seguras                  
+y Humanidades                               Computadora
+
+
+
+Organizacion y      Fundamentos de          Sistemas Distribuidos     Optativa de Campo de        Recursos y Necesidades
+Arquitectura de     Sistemas Embebidos                                Profundizacion              De Mexico
+Computadora
+
+                    
+                    Asignaturas Optativas de Campo de Profundizacion 
