@@ -18,7 +18,7 @@ int main()
     gets(frase);
     while (strcmp(frase, "fin") != 0)
     {
-        fprintf(archivo, "%s", frase);
+        fprintf(archivo, "%s\n", frase);
         printf("Escribe una frase: ");
         gets(frase);
     }
