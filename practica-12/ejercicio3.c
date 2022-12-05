@@ -1,6 +1,7 @@
 //Se desea obtener un listado de n jugadores de futbol donde se deberá incluir su nombre, su posición y el estado de salud. Se podrá realizar mediante una selección (switch - case) con al menos 4 opciones (ejem. excelente, buena, regular, pésima). Dicha información se deberá poder visualizar en un archivo de texto. En el archivo de texto se podrán visualizar los nuevos registros añadidos así como los anteriores.
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main()
@@ -14,10 +15,10 @@ int main()
         printf("Error al abrir el archivo");
         exit(1);
     }
-menu:
-    char nombre[100];
-    char posicion[100];
-    char estado[100];
+rep:
+    char nombre[100] = "";
+    char posicion[100] = "";
+    char estado[100] = "";
 
     printf("Escribe el nombre del jugador -> ");
     gets(nombre);
@@ -53,7 +54,9 @@ menu:
     printf("Desea insetar otro jugador? (s/n) -> ");
     gets(repetir);
     if (strcmp(repetir, "s") == 0)
-        goto menu;
+    {
+        goto rep;
+    }
     else
     {
         printf("Gracias por usar el programa :)");
