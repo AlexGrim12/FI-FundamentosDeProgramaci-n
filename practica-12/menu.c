@@ -170,15 +170,14 @@ inicio:
     {
     ejercicio2:
         FILE *archivo;
-        char frase[100], fin[] = "fin";
+        char frase[100] = "", fin[] = "fin";
         archivo = fopen("registroDeUsuario.txt", "w");
         if (archivo == NULL)
         {
             printf("Error al abrir el archivo");
             exit(1);
         }
-        printf("\nEscribe una frase -> ");
-
+        printf("Escribe una frase -> ");
         do
         {
 
