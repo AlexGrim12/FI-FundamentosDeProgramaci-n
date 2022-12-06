@@ -1,4 +1,4 @@
-//Se desea obtener un listado de n jugadores de futbol donde se deberá incluir su nombre, su posición y el estado de salud. Se podrá realizar mediante una selección (switch - case) con al menos 4 opciones (ejem. excelente, buena, regular, pésima). Dicha información se deberá poder visualizar en un archivo de texto. En el archivo de texto se podrán visualizar los nuevos registros añadidos así como los anteriores.
+// Se desea obtener un listado de n jugadores de futbol donde se deberá incluir su nombre, su posición y el estado de salud. Se podrá realizar mediante una selección (switch - case) con al menos 4 opciones (ejem. excelente, buena, regular, pésima). Dicha información se deberá poder visualizar en un archivo de texto. En el archivo de texto se podrán visualizar los nuevos registros añadidos así como los anteriores.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,8 +25,8 @@ rep:
     printf("Escribe la posicion del jugador -> ");
     gets(posicion);
 
-    printf("Selecciona el estado de salud del jugador -> ");
-    printf("1. Excelente \n2. Buena \n3. Regular \n4. Pesima ");
+    printf("1. Excelente \n2. Buena \n3. Regular \n4. Pesima \n");
+    printf("Selecciona el estado de salud del jugador -> \n");
 
     scanf("%i", &op);
     switch (op)

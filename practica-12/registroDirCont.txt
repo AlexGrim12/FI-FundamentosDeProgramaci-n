@@ -1,0 +1,9 @@
+Direccion y contenido del primer numero
+0000008702bff68c	 12
+
+Direccion y contenido del segundo numero
+0000008702bff688	 12
+
+Direccion y contenido de la suma
+0000008702bff684	 24
+

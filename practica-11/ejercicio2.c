@@ -4,7 +4,7 @@
 float Guarda_datos(float matriz[100][100], int fil, int col)
 {
     int i = 0, j = 0;
-    printf("Inserte los datos de la matriz -> ");
+    printf("Inserte los datos de la matriz -> \n");
     for (i = 0; i < fil; i++)
     {
         for (j = 0; j < col; j++)
@@ -46,7 +46,9 @@ int main()
     scanf("%i", &col);
     float matriz[fil][col], matriz2[fil][col];
     Guarda_datos(matriz, fil, col);
+    printf("Matriz original: \n");
     Muestra_datos(matriz, fil, col);
     acomoda_datos(matriz, matriz2, fil, col);
+    printf("Matriz transpuesta: \n");
     Muestra_datos(matriz2, fil, col);
 }
