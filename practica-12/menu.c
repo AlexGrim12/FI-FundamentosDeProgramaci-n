@@ -66,28 +66,6 @@ void ejercicio1()
     return 0;
 }
 
-void ejercicio2()
-{
-    FILE *archivo;
-    char frase[100];
-    archivo = fopen("registroDeUsuario.txt", "w");
-    if (archivo == NULL)
-    {
-        printf("Error al abrir el archivo");
-        exit(1);
-    }
-    printf("Escribe una frase: ");
-    scanf("%s", frase);
-    while (strcmp(frase, "fin") != 0)
-    {
-        fprintf(archivo, "%s\n", frase);
-        printf("Escribe una frase: ");
-        scanf("%s", frase);
-    }
-    fclose(archivo);
-    return 0;
-}
-
 void ejercicio3()
 {
 rep:
@@ -191,7 +169,27 @@ inicio:
     case 2:
     {
     ejercicio2:
-        ejercicio2();
+        FILE *archivo;
+        char frase[100], fin[] = "fin";
+        archivo = fopen("registroDeUsuario.txt", "w");
+        if (archivo == NULL)
+        {
+            printf("Error al abrir el archivo");
+            exit(1);
+        }
+        printf("\nEscribe una frase -> ");
+
+        do
+        {
+
+            gets(frase);
+            if (strcmp(frase, fin) == 0)
+            {
+                break;
+            }
+            fprintf(archivo, "%s\n", frase);
+        } while (strcmp(frase, fin) != 0);
+        fclose(archivo);
 
         op2 = retorno();
         if (op2 == 1)
