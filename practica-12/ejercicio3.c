@@ -6,28 +6,27 @@
 
 int main()
 {
+rep:
     FILE *archivo;
+
+    char nombre[100] = "", posicion[100] = "", estado[100] = "", repetir[1];
+
     int op;
-    char repetir[1];
+
     archivo = fopen("jugadores.txt", "a");
     if (archivo == NULL)
     {
         printf("Error al abrir el archivo");
         exit(1);
     }
-rep:
-    char nombre[100] = "";
-    char posicion[100] = "";
-    char estado[100] = "";
 
     printf("Escribe el nombre del jugador -> ");
-    gets(nombre);
+    scanf("%s", nombre);
     printf("Escribe la posicion del jugador -> ");
-    gets(posicion);
+    scanf("%s", posicion);
 
     printf("1. Excelente \n2. Buena \n3. Regular \n4. Pesima \n");
-    printf("Selecciona el estado de salud del jugador -> \n");
-
+    printf("Selecciona el estado de salud del jugador -> ");
     scanf("%i", &op);
     switch (op)
     {
@@ -47,12 +46,12 @@ rep:
         printf("Opcion no valida");
         break;
     }
-    fprintf(archivo, "%s %s %s", nombre, posicion, estado);
+    fprintf(archivo, "%s %s %s\n", nombre, posicion, estado);
     fclose(archivo);
-    printf("Opcion no valida");
 
-    printf("Desea insetar otro jugador? (s/n) -> ");
-    gets(repetir);
+    printf("Desea insertar otro jugador? (s/n) -> ");
+    scanf("%s", repetir);
+
     if (strcmp(repetir, "s") == 0)
     {
         goto rep;
