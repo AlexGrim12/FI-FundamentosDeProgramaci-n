@@ -18,7 +18,6 @@ int main()
 
     do
     {
-
         gets(frase);
         if (strcmp(frase, fin) == 0)
         {
