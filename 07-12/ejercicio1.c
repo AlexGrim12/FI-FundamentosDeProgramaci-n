@@ -15,7 +15,7 @@ struct datosAlumno estudiante;
 int main(int argc, char const *argv[])
 {
     FILE *apFile;
-    apFile = fopen("DatosAlumno.txt", "w");
+    apFile = fopen("DatosAlumno.txt", "a");
     printf("Da nombre Alumno: ");
     gets(estudiante.nombre);
     printf("Da apellido Alumno: ");
@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
     printf("\nDatos del alumno: ");
     printf("\nNombre: %s \nAperllido: %s \nCarrera: %s \nNo de cuenta: %s \nEdad: %d \nEstatura: %.2f \nPeso: %.2f\n", estudiante.nombre, estudiante.apellido, estudiante.carrera, estudiante.noDeCuenta, estudiante.edad, estudiante.estatura, estudiante.peso);
     //Imprime en el archivo solicitado :)
-    fprintf(apFile, "Nombre: %s \nAperllido: %s \nCarrera: %s \nNo de cuenta: %s \nEdad: %d \nEstatura: %.2f \nPeso: %.2f\n", estudiante.nombre, estudiante.apellido, estudiante.carrera, estudiante.noDeCuenta, estudiante.edad, estudiante.estatura, estudiante.peso);
+    fprintf(apFile, "Nombre: %s \nAperllido: %s \nCarrera: %s \nNo de cuenta: %s \nEdad: %d \nEstatura: %.2f \nPeso: %.2f\n\n", estudiante.nombre, estudiante.apellido, estudiante.carrera, estudiante.noDeCuenta, estudiante.edad, estudiante.estatura, estudiante.peso);
     fclose(apFile);
 
     return 0;
