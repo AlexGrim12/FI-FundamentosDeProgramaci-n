@@ -1,0 +1,7 @@
+Nombre: Alex G 
+Aperllido: Grim 
+Carrera: Ing en Compu 
+No de cuenta: 32028209-8 
+Edad: 18 
+Estatura: 1.80 
+Peso: 65.00
