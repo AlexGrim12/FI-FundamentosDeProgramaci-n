@@ -19,7 +19,7 @@ int main()
     FILE *apFile;
     apFile = fopen("DatosAlumno.txt", "a");
     printf("Da la cantidad de alumnos: ");
-    scanf("%i", &n);
+    scanf("%d", &n);
     for (int i = 0; i < n; i++)
     {
         printf("Da nombre Alumno: ");
