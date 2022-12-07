@@ -1,9 +1,9 @@
 Direccion y contenido del primer numero
-00000005085ffa2c	 12
+0000006054fff57c	 534
 
 Direccion y contenido del segundo numero
-00000005085ffa28	 12
+0000006054fff578	 654
 
 Direccion y contenido de la suma
-00000005085ffa24	 24
+0000006054fff574	 1188
 
