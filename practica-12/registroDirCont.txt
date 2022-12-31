@@ -1,9 +1,8 @@
 Direccion y contenido del primer numero
-000000bc1dfffcbc	 21
+ 000000dda81ffa2c 	10
 
 Direccion y contenido del segundo numero
-000000bc1dfffcb8	 21
+ 000000dda81ffa28	 30
 
-Direccion y contenido de la suma
-000000bc1dfffcb4	 42
-
+Direccion y contenido del resultado
+ 000000dda81ffa24	 40
